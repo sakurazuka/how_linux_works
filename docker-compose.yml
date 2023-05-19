@@ -1,0 +1,10 @@
+version: "3.7"
+
+services:
+  how_linux_works:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    volumes:
+      - ./:/root/how_linux_works/
+    tty: true
